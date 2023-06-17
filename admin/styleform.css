@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: #ffa12c; */
+}
+
+.logo_container {
+    margin-left: 82px;
+    box-sizing: border-box;
+    width: 80px;
+    height: 80px;
+    border-radius: 11px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    max-width: 850px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+.rectangle{
+    width: 100%;
+    display: flex;
+    max-width: 1274px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+.login {
+    width: 400px;
+}
+
+form {
+    width: 250px;
+    margin: 60px auto;
+}
+
+h1 {
+    margin: 20px;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+hr {
+    border-top: 2px solid #ffa12c;
+}
+
+p {
+    text-align: center;
+    margin: 10px;
+}
+
+.left img {
+    width: 450px;
+    height: 100%;
+    /* border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px; */
+}
+
+form label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+input{
+    width: 100%;
+    margin: 2px;
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+input:focus {
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 0px 2px #242424;
+    background-color: transparent;
+}
+
+.button {
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 252px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: #115DFC;
+}
+
+.button:hover {
+    background: transparent;
+    border: 1px solid #115DFC;
+    color: #115DFC;
+}
+
+
+@media (max-width: 880px) {
+    *{
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        justify-items: center;
+    }
+    p, label{
+        color: #0edb6a;
+    }
+    .container {
+        width: 90%;
+        max-width: 750px;
+        margin-left: 20px;
+        margin-right: 20px;
+        background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(191, 179, 245, 0.5)), url('car.png');
+        background-size: cover;
+    }
+
+    form {
+        width: 300px;
+        margin: 5px auto;
+    }
+    input:focus::placeholder{
+        color: white;
+        opacity: 50%;
+    }
+    .logo_container {
+        margin-left: 110px;
+    }
+
+    .login {
+        width: 400px;
+        padding: 20px;
+    }
+    input:focus {
+        border: 1px solid transparent;
+        box-shadow: 0px 0px 0px 2px #ffffff;
+        background-color: transparent;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .left img {
+        display: none;
+        width: 100%;
+        height: 100%;
+    }
+}
